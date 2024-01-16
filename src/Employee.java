@@ -36,12 +36,17 @@ public class Employee {
         return salary;
     }
 
+    public double salaryPoint(){
+      double point=1;
+      return point*salary;
+    }
+
     public void setSalary(double salary) {
-        this.salary = salary;
+        this.salary = salaryPoint();
     }
 
     public void work(){
-        System.out.println("employee starts to working..");
+        System.out.println("employee starts to working.."+ salary);
     }
 
     @java.lang.Override

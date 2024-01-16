@@ -44,7 +44,7 @@ public class Main {
 
 
         JuniorDeveloper dev1 = new JuniorDeveloper(1,"mehmet", 10000);
-        System.out.println(dev1);
+         dev1.work();
     }
 
 

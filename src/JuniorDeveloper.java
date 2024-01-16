@@ -1,6 +1,6 @@
 public class JuniorDeveloper extends Employee {
 
-
+    private double salary;
 
     public JuniorDeveloper(long id, String name) {
         super(id, name);
@@ -10,12 +10,18 @@ public class JuniorDeveloper extends Employee {
         super(id, name, salary);
     }
 
-    @java.lang.Override
-    public void work() {
-      double currentSalary = getSalary();
-      double newSalary = currentSalary *1.2;
-        System.out.println("junior dev salary is " + newSalary );
+    public double salaryPoint() {
+        double point= 1.3;
+        return point*salary;
+    }
 
+    public double getSalary() {
+        return salary;
+    }
+
+    @Override
+    public void work() {
+        System.out.println("Junior developers salary is " + salaryPoint());
     }
 }
 
