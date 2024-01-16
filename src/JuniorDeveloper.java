@@ -10,6 +10,11 @@ public class JuniorDeveloper extends Employee {
         super(id, name, salary);
     }
 
+    @Override
+    public void setSalary(double salary) {
+        this.salary = salaryPoint();
+    }
+
     public double salaryPoint() {
         double point= 1.3;
         return point*salary;
@@ -21,7 +26,8 @@ public class JuniorDeveloper extends Employee {
 
     @Override
     public void work() {
-        System.out.println("Junior developers salary is " + salaryPoint());
+
+        System.out.println("Junior developers salary is " + getSalary());
     }
 }
 
